@@ -1,0 +1,32 @@
+.bar {
+  width: 30px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.bar:nth-child(1) {
+    width: 13px;
+}
+
+.bar:nth-child(3) {
+    width: 20px;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  gap: 7px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.burger:hover .bar:nth-child(1), .burger:hover  .bar:nth-child(3) {
+    width: 30px;
+}
+
+.burger:hover .bar:nth-child(2){
+    width: 15px;
+}
