@@ -11,29 +11,29 @@ const Navbar = () => {
   return (
     <nav className="w-full">
       <div className="p-10 flex justify-between items-center">
-        <div className="flex">
+        <div className="flex items-center">
           <div className={`${styles.burger} mr-5 hidden md:flex`}>
             <div className={styles.bar}></div>
             <div className={styles.bar}></div>
             <div className={styles.bar}></div>
           </div>
-          <div className="logo">
+          <div className="logo mr-10">
             <Image src={logo} alt="logo" />
           </div>
         </div>
         <ul className="navigation flex mr-auto hidden lg:flex">
-          <li className="nav-item text-sm xl:text-base px-3 xl:px-4">
+          <li className="nav-item flex gap-x-1 items-center text-sm xl:text-base px-3 xl:px-4">
             Men wear
-            <Image src={dropdown} alt="dropdown-svg" />
+            <Image src={dropdown} alt="dropdown-svg"/>
           </li>
-          <li className="nav-item text-sm xl:text-base px-3 xl:px-4">
+          <li className="nav-item flex gap-x-1 items-center text-sm xl:text-base px-3 xl:px-4">
             Women wear
             <Image src={dropdown} alt="dropdown-svg" />
           </li>
           <li className="nav-item text-sm xl:text-base px-3 xl:px-4">Search</li>
           <li className="nav-item text-sm xl:text-base px-3 xl:px-4">Shops</li>
         </ul>
-        <div className="language flex items-center gap-x-2 border rounded-lg border-gray-300 p-2">
+        <div className="language flex items-center gap-x-2 border rounded-lg border-gray-300 p-2 mr-5">
           <Image src={ABD} alt="ABD-svg" />
           English-EN
           <Image src={dropdownCouple} alt="dropdown-svg" />
