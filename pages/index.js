@@ -1,8 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Banner from '../sections/banner'
 
 export default function Home() {
   return (
-    <h1>Home</h1>
+    <>
+      <Banner/>
+    </>
   )
 }
