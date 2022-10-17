@@ -1,8 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
+import DiscountCarouselSection from "../sections/discountCarouselSection";
+import FlashSaleSection from "../sections/flashSaleSection";
 
 export default function Home() {
   return (
-    <h1>Home</h1>
-  )
+    <>
+      <FlashSaleSection />
+      <DiscountCarouselSection />
+    </>
+  );
 }

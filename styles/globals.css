@@ -6,3 +6,21 @@ html,
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+/* discount slider */
+
+.discountSlider .swiper-pagination {
+  /* position: absolute; */
+  bottom: 25px;
+}
+
+.discountSlider .swiper-pagination-bullets span {
+  background-color: white;
+  transition: 0.5s;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  margin: 0 4px;
+}
+
+.discountSlider .swiper-pagination-bullet-active {
+  scale: 1.3;
+}
