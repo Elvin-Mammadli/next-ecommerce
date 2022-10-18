@@ -20,12 +20,14 @@ module.exports = {
     extend: {
       keyframes: {
         shine: {
-          "0%": { transform: "skewX(-12deg) translate(0)" },
-          "100%": { transform: "skewX(-12deg) translate(100px)" },
+          "0%": {
+            transform: "skewX(-12deg) translate(-1000px)",
+          },
+          "100%": { transform: "skewX(-12deg) translate(1000px)" },
         },
       },
       animation: {
-        shine: "shine 1s linear 1",
+        shine: "shine 1s ease-out 5s infinite ",
       },
     },
   },
